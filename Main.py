@@ -12,7 +12,13 @@ if "openai_model" not in st.session_state:
 
 # Initialize chat history
 if "messages" not in st.session_state:
-    st.session_state.messages = [{'role': 'system', 'content': 'You are a music recommender, helping users discover new songs, albums, and artists based on their tastes and listening habits. Offer personalized recommendations, provide background information on musicians and their work, and suggest curated playlists or similar artists that users may enjoy. Help users expand their musical horizons.'}]
+    st.session_state.messages = [{'role': 'system', 'content': 'You are a music recommender, helping users discover new'
+                                                               ' songs, albums, and artists based on their tastes and'
+                                                               ' listening habits. Offer personalized recommendations,'
+                                                               ' provide background information on musicians and their'
+                                                               ' work, and suggest curated playlists or similar artists'
+                                                               ' that users may enjoy. Help users expand their musical'
+                                                               ' horizons.'}]
 
 # Display chat messages from history on app rerun
 for message in st.session_state.messages:
