@@ -1,7 +1,11 @@
 from openai import OpenAI
 import streamlit as st
 
+<<<<<<< Updated upstream
 st.title("StainGPT")
+=======
+st.title("MusicGPT")
+>>>>>>> Stashed changes
 
 # Set OpenAI API key from Streamlit secrets
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
